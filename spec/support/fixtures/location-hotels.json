@@ -1,0 +1,85 @@
+{
+  "data": [
+    {
+      "address_obj": {
+        "street1": "Calwati Road ",
+        "street2": "Fort Cochin",
+        "city": "Kochi (Cochin)",
+        "state": "Kerala",
+        "country": "India",
+        "postalcode": "682001",
+        "address_string": "Calwati Road Fort Cochin, Kochi (Cochin) 682001 India"
+      },
+      "percent_recommended": null,
+      "latitude": "9.967205",
+      "rating": "4.5",
+      "location_id": "325218",
+      "ranking_data": {
+        "ranking_string": "#8 of 181 hotels in Kochi (Cochin)",
+        "ranking_out_of": "181",
+        "geo_location_id": "297633",
+        "ranking": "8",
+        "geo_location_name": "Kochi (Cochin)"
+      },
+      "api_detail_url": "http://api.tripadvisor.com/api/partner/2.0/location/325218?key=ae2cb830db114b18b4104b7a219c1eb0",
+      "location_string": "Kochi (Cochin), Kerala",
+      "web_url": "http://www.tripadvisor.com/Hotel_Review-g297633-d325218-Reviews-m29090-Brunton_Boatyard-Kochi_Cochin_Kerala.html",
+      "price_level": "$$$$",
+      "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-29090-5.png",
+      "awards": [
+        {
+          "award_type": "Certificate of Excellence",
+          "year": "2015",
+          "images": {
+            "small": "http://www.tripadvisor.com/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-29090-5.jpg",
+            "large": "http://www.tripadvisor.com/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2015_en_US_large-29090-5.jpg"
+          },
+          "categories": [],
+          "display_name": "Certificate of Excellence 2015"
+        }
+      ],
+      "name": "Brunton Boatyard",
+      "num_reviews": "465",
+      "write_review": "http://www.tripadvisor.com/UserReview-g297633-d325218-m29090-Brunton_Boatyard-Kochi_Cochin_Kerala.html",
+      "category": {
+        "name": "hotel",
+        "localized_name": "Hotel"
+      },
+      "subcategory": [
+        {
+          "name": "hotel",
+          "localized_name": "Hotel"
+        }
+      ],
+      "ancestors": [
+        {
+          "abbrv": null,
+          "level": "Municipality",
+          "name": "Kochi (Cochin)",
+          "location_id": "297633"
+        },
+        {
+          "abbrv": null,
+          "level": "State",
+          "name": "Kerala",
+          "location_id": "297631"
+        },
+        {
+          "abbrv": null,
+          "level": "Country",
+          "name": "India",
+          "location_id": "293860"
+        }
+      ],
+      "see_all_photos": "http://www.tripadvisor.com/Hotel_Review-g297633-d325218-m29090-Reviews-Brunton_Boatyard-Kochi_Cochin_Kerala.html#photos",
+      "longitude": "76.242386"
+    }
+  ],
+  "paging": {
+    "next": null,
+    "previous": null,
+    "results": "1",
+    "total_results": "1",
+    "skipped": "0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "location_id": "96223",
+      "name": "Americas Best Value Inn & Suites",
+      "distance": "0.692619858260542",
+      "bearing": "south",
+      "address_obj": {
+        "street1": "350 South State Street",
+        "street2": "",
+        "city": "Clarksdale",
+        "state": "Mississippi",
+        "country": "United States",
+        "postalcode": "38614",
+        "address_string": "350 South State Street, Clarksdale, MS 38614"
+      }
+    }
+  ]
+}
