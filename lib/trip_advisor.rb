@@ -39,15 +39,19 @@ module TripAdvisor
   end
 
   def self.location_mapper_path(id, query, category= 'hotels')
-    API_URL + API_VERSION + "/location_mapper/#{id.delete(' ')}?key=#{key}-mapper&category=#{category}&q=#{query}"
+    normalize_url API_URL + API_VERSION + "/location_mapper/#{id.delete(' ')}?key=#{key}-mapper&category=#{category}&q=#{query}"
   end
 
   def self.location_hotels_path(id)
-    API_URL + API_VERSION + "/location/#{id.delete(' ')}/hotels?key=#{key}"
+    normalize_url API_URL + API_VERSION + "/location/#{id.delete(' ')}/hotels?key=#{key}"
   end
 
   def self.root
     File.expand_path('../..',__FILE__)
+  end
+
+  def self.normalize_url(url)
+    URI.parse(url).to_s
   end
 
 end
