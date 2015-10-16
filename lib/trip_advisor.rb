@@ -10,8 +10,8 @@ module TripAdvisor
   API_VERSION = '2.0'
   API_URL = "http://api.tripadvisor.com/api/partner/"
 
-  def self.find(coordinates: nil, query: nil, category: nil, field: {})
-    result = location_mapper(coordinates, query, category)
+  def self.find(coordinates: nil, field: {}, params: {})
+    result = location_mapper(coordinates, params)
     result['data'].find do |element|
       element[field.keys.first.to_s].to_s == field.values.first.to_s
     end
@@ -26,8 +26,8 @@ module TripAdvisor
     JSON.parse(RestClient.get(location_hotels_path(id)))
   end
 
-  def self.location_mapper(coordinates, query, category=nil)
-    JSON.parse(RestClient.get(location_mapper_path(coordinates, query, category)))
+  def self.location_mapper(coordinates, params = {})
+    JSON.parse(RestClient.get(location_mapper_path(coordinates, params)))
   end
 
   def self.map_hotel(id)
@@ -38,8 +38,8 @@ module TripAdvisor
     API_URL + API_VERSION + "/map/#{id.delete(' ')}/hotels?key=#{key}"
   end
 
-  def self.location_mapper_path(id, query, category= 'hotels')
-    normalize_url API_URL + API_VERSION + "/location_mapper/#{id.delete(' ')}?key=#{key}-mapper&category=#{category}&q=#{query}"
+  def self.location_mapper_path(id, params)
+    normalize_url API_URL + API_VERSION + "/location_mapper/#{id.delete(' ')}?key=#{key}-mapper&#{params.to_query}"
   end
 
   def self.location_hotels_path(id)
