@@ -1,4 +1,4 @@
-# TripAdvisor [![Build Status](https://travis-ci.org/rubyonroad/trip_advisor.svg)](https://travis-ci.org/rubyonroad/trip_advisor)
+# TripAdvisor [![Build Status](https://travis-ci.org/rubyonroad/trip_advisor.svg?branch=master)](https://travis-ci.org/rubyonroad/trip_advisor)
 
 # DO NOT USE FOR PRODUCTION !!!
 
